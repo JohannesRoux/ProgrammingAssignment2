@@ -1,7 +1,8 @@
-## Function pair to create a matricx and cache its inverse
+## Function pair to create a matrix and cache its inverse
 
-## Create a closure containing a matrix and associated environment 
-## in which to cache the inverse of the matrix
+
+## Create a closure containing a function and associated environment 
+## ...in which to cache the inverse of the matrix
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL 			##This is the local version of the inverse. 
@@ -23,8 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Access the closure created in make CacheMatrix, 
-## check if the inverse is cached and return, else caculclate inverse and return
+## Access the closure created in make CacheMatrix(), 
+## check if the inverse is cached and return, else calculate inverse and return
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
